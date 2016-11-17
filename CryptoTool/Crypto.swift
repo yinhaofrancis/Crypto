@@ -7,9 +7,27 @@
 //
 
 import Foundation
-import importCrypto
-public func SHA_256(string:String,count:UInt32)->[UInt8]{
+//import Crypto
+public func SHA_256(string:String,count:UInt32? = nil)->[UInt8]{
     var md:[UInt8] = Array(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
-    CC_SHA256(string,count,&md)
+    CC_SHA256(string,count ?? UInt32(string.utf8.count),&md)
     return md
+}
+public func SHA_384(string:String,count:UInt32? = nil)->[UInt8]{
+    var md:[UInt8] = Array(repeating: 0, count: Int(CC_SHA384_DIGEST_LENGTH))
+    CC_SHA384(string, count ?? UInt32(string.utf8.count), &md)
+    return md
+}
+public func SHA_512(string:String,count:UInt32? = nil)->[UInt8]{
+    var md:[UInt8] = Array(repeating: 0, count: Int(CC_SHA512_DIGEST_LENGTH))
+    CC_SHA512(string, count ?? UInt32(string.utf8.count), &md)
+    return md
+}
+public func SHA_224(string:String,count:UInt32? = nil)->[UInt8]{
+    var md:[UInt8] = Array(repeating: 0, count: Int(CC_SHA224_DIGEST_LENGTH))
+    CC_SHA224(string, count ?? UInt32(string.utf8.count), &md)
+    return md
+}
+public func convertCodeToString(code:[UInt8])->String{
+    return code.reduce("", {$0 + String(format: "%02x", $1)})
 }

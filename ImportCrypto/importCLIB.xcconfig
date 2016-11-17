@@ -1,0 +1,10 @@
+//
+//  importCLIB.xcconfig
+//  Crypto
+//
+//  Created by YinHao on 2016/11/17.
+//  Copyright © 2016年 Suzhou Qier Network Technology Co., Ltd. All rights reserved.
+//
+
+MODULEMAP_FILE[sdk=iphoneos*] = $(SRCROOT)/importCrypto/iphoneos.modulemap
+MODULEMAP_FILE[sdk=iphonesimulator*] = $(SRCROOT)/importCrypto/iphonesimulator.modulemap

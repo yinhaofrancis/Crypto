@@ -13,7 +13,6 @@
 		B21A27761DDD55050051B32B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A27751DDD55050051B32B /* Security.framework */; };
 		B21A279C1DDD7C640051B32B /* CryptoTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B21A279A1DDD7C640051B32B /* CryptoTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25388721DDD8567007822CB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27A01DDD7C980051B32B /* Crypto.swift */; };
-		B25388851DDD8A38007822CB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B25388841DDD8A38007822CB /* Cartfile */; };
 		B25388931DDD9485007822CB /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25388781DDD861B007822CB /* Crypto.framework */; };
 		B25388941DDD9527007822CB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27A01DDD7C980051B32B /* Crypto.swift */; };
 		B253889D1DDD95D7007822CB /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B253889C1DDD95D7007822CB /* Crypto.h */; };
@@ -35,7 +34,6 @@
 		B25388801DDD8655007822CB /* importCLIB.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = importCLIB.xcconfig; sourceTree = "<group>"; };
 		B25388811DDD866F007822CB /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
 		B25388821DDD86D0007822CB /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
-		B25388841DDD8A38007822CB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		B25388861DDD8C42007822CB /* swiftTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = swiftTool.framework; path = Carthage/Build/iOS/swiftTool.framework; sourceTree = "<group>"; };
 		B253889C1DDD95D7007822CB /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +68,6 @@
 		B21A27291DDD490B0051B32B = {
 			isa = PBXGroup;
 			children = (
-				B25388841DDD8A38007822CB /* Cartfile */,
 				B21A275A1DDD546E0051B32B /* KeyChainSavePassword */,
 				B21A27991DDD7C640051B32B /* CryptoTool */,
 				B25388791DDD861B007822CB /* Crypto */,
@@ -282,7 +279,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25388851DDD8A38007822CB /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +582,7 @@
 				B253887F1DDD861B007822CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

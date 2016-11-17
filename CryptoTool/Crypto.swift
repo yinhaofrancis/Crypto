@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import Crypto
+import Crypto
 public func SHA_256(string:String,count:UInt32? = nil)->[UInt8]{
     var md:[UInt8] = Array(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
     CC_SHA256(string,count ?? UInt32(string.utf8.count),&md)

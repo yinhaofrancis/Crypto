@@ -14,8 +14,8 @@
 		B21A279C1DDD7C640051B32B /* CryptoTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B21A279A1DDD7C640051B32B /* CryptoTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25388721DDD8567007822CB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27A01DDD7C980051B32B /* Crypto.swift */; };
 		B25388931DDD9485007822CB /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25388781DDD861B007822CB /* Crypto.framework */; };
-		B25388941DDD9527007822CB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27A01DDD7C980051B32B /* Crypto.swift */; };
-		B253889D1DDD95D7007822CB /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B253889C1DDD95D7007822CB /* Crypto.h */; };
+		B25388DE1DDD9E8B007822CB /* importCLIB.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B25388DA1DDD9E8B007822CB /* importCLIB.xcconfig */; };
+		B25388DF1DDD9E8B007822CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25388DB1DDD9E8B007822CB /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,11 @@
 		B21A279B1DDD7C640051B32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B21A27A01DDD7C980051B32B /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		B25388781DDD861B007822CB /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253887B1DDD861B007822CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B25388801DDD8655007822CB /* importCLIB.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = importCLIB.xcconfig; sourceTree = "<group>"; };
-		B25388811DDD866F007822CB /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
-		B25388821DDD86D0007822CB /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		B25388861DDD8C42007822CB /* swiftTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = swiftTool.framework; path = Carthage/Build/iOS/swiftTool.framework; sourceTree = "<group>"; };
-		B253889C1DDD95D7007822CB /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		B25388DA1DDD9E8B007822CB /* importCLIB.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = importCLIB.xcconfig; path = Crypto/importCLIB.xcconfig; sourceTree = SOURCE_ROOT; };
+		B25388DB1DDD9E8B007822CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Crypto/Info.plist; sourceTree = SOURCE_ROOT; };
+		B25388DC1DDD9E8B007822CB /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = iphoneos.modulemap; path = Crypto/iphoneos.modulemap; sourceTree = SOURCE_ROOT; };
+		B25388DD1DDD9E8B007822CB /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = iphonesimulator.modulemap; path = Crypto/iphonesimulator.modulemap; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +118,10 @@
 		B25388791DDD861B007822CB /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				B253887B1DDD861B007822CB /* Info.plist */,
-				B25388801DDD8655007822CB /* importCLIB.xcconfig */,
-				B25388811DDD866F007822CB /* iphoneos.modulemap */,
-				B25388821DDD86D0007822CB /* iphonesimulator.modulemap */,
-				B253889C1DDD95D7007822CB /* Crypto.h */,
+				B25388DA1DDD9E8B007822CB /* importCLIB.xcconfig */,
+				B25388DB1DDD9E8B007822CB /* Info.plist */,
+				B25388DC1DDD9E8B007822CB /* iphoneos.modulemap */,
+				B25388DD1DDD9E8B007822CB /* iphonesimulator.modulemap */,
 			);
 			name = Crypto;
 			path = ImportCrypto;
@@ -152,7 +150,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B253889D1DDD95D7007822CB /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25388DF1DDD9E8B007822CB /* Info.plist in Resources */,
+				B25388DE1DDD9E8B007822CB /* importCLIB.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25388941DDD9527007822CB /* Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +503,7 @@
 		};
 		B253887E1DDD861B007822CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25388801DDD8655007822CB /* importCLIB.xcconfig */;
+			baseConfigurationReference = B25388DA1DDD9E8B007822CB /* importCLIB.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -513,7 +511,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ImportCrypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -526,7 +524,7 @@
 		};
 		B253887F1DDD861B007822CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25388801DDD8655007822CB /* importCLIB.xcconfig */;
+			baseConfigurationReference = B25388DA1DDD9E8B007822CB /* importCLIB.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -534,7 +532,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ImportCrypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

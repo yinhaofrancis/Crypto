@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B212CB6F1DE1AC86003B94FA /* CryptoToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212CB6E1DE1AC86003B94FA /* CryptoToolTests.swift */; };
+		B212CB711DE1AC86003B94FA /* CryptoTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A27981DDD7C640051B32B /* CryptoTool.framework */; };
 		B21A27691DDD546F0051B32B /* KeyChainSavePassword.h in Headers */ = {isa = PBXBuildFile; fileRef = B21A275B1DDD546E0051B32B /* KeyChainSavePassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B21A27721DDD54810051B32B /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27701DDD54810051B32B /* KeychainConfiguration.swift */; };
 		B21A27731DDD54810051B32B /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A27711DDD54810051B32B /* KeychainPasswordItem.swift */; };
@@ -18,7 +20,20 @@
 		B25388DF1DDD9E8B007822CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25388DB1DDD9E8B007822CB /* Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B212CB721DE1AC86003B94FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B21A272A1DDD490B0051B32B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21A27971DDD7C640051B32B;
+			remoteInfo = CryptoTool;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B212CB6C1DE1AC86003B94FA /* CryptoToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B212CB6E1DE1AC86003B94FA /* CryptoToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToolTests.swift; sourceTree = "<group>"; };
+		B212CB701DE1AC86003B94FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B21A27591DDD546E0051B32B /* KeyChainSavePassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyChainSavePassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21A275B1DDD546E0051B32B /* KeyChainSavePassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChainSavePassword.h; sourceTree = "<group>"; };
 		B21A275C1DDD546E0051B32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +53,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B212CB691DE1AC86003B94FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B212CB711DE1AC86003B94FA /* CryptoTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B21A27551DDD546E0051B32B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,12 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B212CB6D1DE1AC86003B94FA /* CryptoToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				B212CB6E1DE1AC86003B94FA /* CryptoToolTests.swift */,
+				B212CB701DE1AC86003B94FA /* Info.plist */,
+			);
+			path = CryptoToolTests;
+			sourceTree = "<group>";
+		};
 		B21A27291DDD490B0051B32B = {
 			isa = PBXGroup;
 			children = (
 				B21A275A1DDD546E0051B32B /* KeyChainSavePassword */,
 				B21A27991DDD7C640051B32B /* CryptoTool */,
 				B25388791DDD861B007822CB /* Crypto */,
+				B212CB6D1DE1AC86003B94FA /* CryptoToolTests */,
 				B21A27341DDD490B0051B32B /* Products */,
 				B21A27741DDD55050051B32B /* Frameworks */,
 			);
@@ -81,6 +114,7 @@
 				B21A27591DDD546E0051B32B /* KeyChainSavePassword.framework */,
 				B21A27981DDD7C640051B32B /* CryptoTool.framework */,
 				B25388781DDD861B007822CB /* Crypto.framework */,
+				B212CB6C1DE1AC86003B94FA /* CryptoToolTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +190,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B212CB6B1DE1AC86003B94FA /* CryptoToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B212CB761DE1AC86003B94FA /* Build configuration list for PBXNativeTarget "CryptoToolTests" */;
+			buildPhases = (
+				B212CB681DE1AC86003B94FA /* Sources */,
+				B212CB691DE1AC86003B94FA /* Frameworks */,
+				B212CB6A1DE1AC86003B94FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B212CB731DE1AC86003B94FA /* PBXTargetDependency */,
+			);
+			name = CryptoToolTests;
+			productName = CryptoToolTests;
+			productReference = B212CB6C1DE1AC86003B94FA /* CryptoToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B21A27581DDD546E0051B32B /* KeyChainSavePassword */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B21A276E1DDD546F0051B32B /* Build configuration list for PBXNativeTarget "KeyChainSavePassword" */;
@@ -220,6 +272,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Suzhou Qier Network Technology Co., Ltd.";
 				TargetAttributes = {
+					B212CB6B1DE1AC86003B94FA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 27ZYBRBPV8;
+						ProvisioningStyle = Automatic;
+					};
 					B21A27581DDD546E0051B32B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = XS4AM96H8J;
@@ -253,11 +310,19 @@
 				B21A27581DDD546E0051B32B /* KeyChainSavePassword */,
 				B21A27971DDD7C640051B32B /* CryptoTool */,
 				B25388771DDD861B007822CB /* Crypto */,
+				B212CB6B1DE1AC86003B94FA /* CryptoToolTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B212CB6A1DE1AC86003B94FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B21A27571DDD546E0051B32B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +349,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B212CB681DE1AC86003B94FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B212CB6F1DE1AC86003B94FA /* CryptoToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B21A27541DDD546E0051B32B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,7 +383,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B212CB731DE1AC86003B94FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B21A27971DDD7C640051B32B /* CryptoTool */;
+			targetProxy = B212CB721DE1AC86003B94FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B212CB741DE1AC86003B94FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27ZYBRBPV8;
+				INFOPLIST_FILE = CryptoToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yinhao.FrancisAlex.CryptoToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B212CB751DE1AC86003B94FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27ZYBRBPV8;
+				INFOPLIST_FILE = CryptoToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yinhao.FrancisAlex.CryptoToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B21A27451DDD490B0051B32B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,6 +651,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B212CB761DE1AC86003B94FA /* Build configuration list for PBXNativeTarget "CryptoToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B212CB741DE1AC86003B94FA /* Debug */,
+				B212CB751DE1AC86003B94FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B21A272D1DDD490B0051B32B /* Build configuration list for PBXProject "Crypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

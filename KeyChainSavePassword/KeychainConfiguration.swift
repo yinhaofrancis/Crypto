@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct KeychainConfiguration {
-    static let serviceName = "cn.francisalex.KeyChainSavePassword.Service"
+public struct KeychainConfiguration {
+    public static let serviceName = "cn.francisalex.KeyChainSavePassword.Service"
     
     /*
         Specifying an access group to use with `KeychainPasswordItem` instances
